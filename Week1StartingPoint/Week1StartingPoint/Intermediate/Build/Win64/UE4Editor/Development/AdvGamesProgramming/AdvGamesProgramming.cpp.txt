@@ -1,2 +1,0 @@
-C:\Users\table\Documents\Advanced Games Programming\Workshops\Week1StartingPoint\Week1StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
-C:\Users\table\Documents\Advanced Games Programming\Workshops\Week1StartingPoint\Week1StartingPoint\Source\AdvGamesProgramming\AdvGamesProgramming.h
