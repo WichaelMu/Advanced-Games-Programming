@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\AdvGamesProgramming.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{003D273D-EB52-4927-A235-88DD2CDD3C69}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AdvGamesProgramming.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\AdvGamesProgrammingEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{1FCF1B19-2FF5-4967-8F71-38BB2FE5F576}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\AdvGamesProgramming">
+      <UniqueIdentifier>{343089F0-5CF7-455F-AEB9-B836C04A9AC6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AdvGamesProgramming\AdvGamesProgramming.Build.cs">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\AdvGamesProgramming\AdvGamesProgramming.cpp">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvGamesProgramming\AdvGamesProgramming.h">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvGamesProgramming\AdvGamesProgrammingGameModeBase.cpp">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvGamesProgramming\AdvGamesProgrammingGameModeBase.h">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvGamesProgramming\PickupRotator.cpp">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvGamesProgramming\PickupRotator.h">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

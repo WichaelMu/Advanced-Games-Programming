@@ -1,0 +1,5 @@
+C:\Users\table\Documents\Advanced Games Programming\Workshops\Week1StartingPoint\Week1StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\table\Documents\Advanced Games Programming\Workshops\Week1StartingPoint\Week1StartingPoint\Source\AdvGamesProgramming/PickupRotator.h
+C:\Users\table\Documents\Advanced Games Programming\Workshops\Week1StartingPoint\Week1StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\PickupRotator.generated.h
