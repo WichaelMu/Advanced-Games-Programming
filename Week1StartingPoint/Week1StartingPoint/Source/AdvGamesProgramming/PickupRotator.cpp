@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "GameFramework/Actor.h"
 #include "PickupRotator.h"
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UPickupRotator::UPickupRotator()
@@ -21,8 +21,13 @@ void UPickupRotator::BeginPlay()
 
 	// ...
 
-	FVector Position = GetOwner()->GetActorLocation();
-	UE_LOG(LogTemp, Warning, TEXT("%s"), *Position.ToString())
+	Owner = GetOwner();
+
+	if (Owner)
+	{
+		FVector Position = Owner->GetActorLocation();
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *Position.ToString())
+	}
 	
 }
 
@@ -40,11 +45,9 @@ void UPickupRotator::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 void UPickupRotator::TickRotateObject(const float& DeltaTime)
 {
-	AActor* Owner = GetOwner();
-
 	if (Owner)
 	{
-		FRotator CurrentActorRotation = GetOwner()->GetActorRotation();
+		FRotator CurrentActorRotation = Owner->GetActorRotation();
 		CurrentActorRotation.Yaw += DeltaTime * RotSpeed;
 
 		Owner->SetActorRotation(CurrentActorRotation);

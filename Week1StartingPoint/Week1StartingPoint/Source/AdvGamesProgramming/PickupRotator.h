@@ -29,4 +29,6 @@ public:
 private:
 	UPROPERTY(EditInstanceOnly)
 		float RotSpeed;
+
+	AActor* Owner = nullptr;
 };
