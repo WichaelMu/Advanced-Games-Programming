@@ -34,60 +34,8 @@ void AAIManager::Tick(float DeltaTime)
 
 TArray<ANavigationNode*> AAIManager::GeneratePath(ANavigationNode* Origin, ANavigationNode* Destination)
 {
-	for (auto& Node : AllNodes) { Node->GScore = INT_MAX; }
-
-	TArray<ANavigationNode*> Open;
-	Open.Add(Origin);
-	Origin->GScore = 0;
-	Origin->HScore = FVector::Dist(Origin->GetActorLocation(), Destination->GetActorLocation());
-
-	while (Open.Num() > 0)
-	{
-		ANavigationNode* Current = Open[0];
-
-		float LowestF = INT_MAX;
-		for (int i = 1; i < Open.Num(); ++i)
-		{
-			if (Open[i]->FScore() < LowestF)
-			{
-				LowestF = Open[i]->FScore();
-				Current = Open[i];
-			}
-		}
-
-		Open.Remove(Current);
-
-		if (Current == Destination) {
-			TArray<ANavigationNode*> Path;
-
-			ANavigationNode* Traverse = Destination;
-			while (Traverse != Origin)
-			{
-				Path.Add(Traverse);
-				Traverse = Traverse->CameFrom;
-			}
-
-			return Path;
-		}
-
-		for (auto it = Current->ConnectedNodes.CreateIterator(); it; ++it)
-		{
-			float FUpdatedCost = Current->GScore + FVector::DistSquared(Current->GetActorLocation(), (*it)->GetActorLocation());
-			if (FUpdatedCost < (*it)->GScore)
-			{
-				(*it)->GScore = FUpdatedCost;
-				(*it)->HScore = FVector::DistSquared((*it)->GetActorLocation(), Destination->GetActorLocation());
-				(*it)->CameFrom = Current;
-
-				if (!Open.Contains(*it))
-				{
-					Open.Add(*it);
-				}
-			}
-		}
-	}
-
-	return TArray<ANavigationNode*>();
+	TArray<ANavigationNode*> empty;
+	return empty;
 }
 
 void AAIManager::PopulateNodes()
